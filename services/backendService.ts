@@ -1,6 +1,8 @@
 import { Source } from "../types";
 
-const API_BASE_URL = 'http://loadbalancer-chatbot-44046910.us-east-1.elb.amazonaws.com';
+//const API_BASE_URL = 'http://loadbalancer-chatbot-44046910.us-east-1.elb.amazonaws.com';
+
+const API_BASE_URL = 'https://qkb99xbn0k.execute-api.us-east-2.amazonaws.com';
 
 export const sendMessageToBackend = async (query: string): Promise<{ text: string; sources: Source[] }> => {
   try {
